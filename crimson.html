@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crimson Crown</title>
+    <link rel="stylesheet" href="./simrest.css">
+</head>
+<body>
+    <header>
+        
+        <div class="navbar">
+            <nav>
+                <ul class="slidebar">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Reservation</a></li>
+                    <li onclick="hideSlidebar()"><a href=""><i class="fa-solid fa-magnifying-glass">X</i></a></li>
+                </ul>
+                <ul>
+                    <h1>Crimson Crown</h1>
+                    <li class="hideOnMobile"><a href="">Home</a></li>
+                    <li class="hideOnMobile"><a href="">About</a></li>
+                    <li class="hideOnMobile"><a href="">Reservation</a></li>
+                    <li onclick="showSlidebar()"><a href=""><i class="fa-solid fa-bars">☰</i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <script>
+        function showSlidebar() {
+            const slidebar =document.querySelector('.slidebar');
+            slidebar.style.display = 'flex';
+        }
+        function hideSlidebar() {
+            const slidebar = document.querySelector('.slidebar')
+            slidebar.style.display = 'none'
+        }
+    </script>
+    <div class="hero">
+        <h1>Luxury Dining Experience</h1>
+        <p>Fine food. Fine wine. Fine moments</p>
+    </div>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Crimson Crown offers a premium dining experience with with world-class chefs and an elegant atmosphere.</p>
+   
+      <section id="menu">
+           <h2>Signature Menu</h2>
+            <div class="menu-grid">
+               <div class="card">
+                  <img src="./img/792b320f5f3f1c58cc15179f19a13c95.jpg" alt=""><br>
+                  Egusi Soup - $45
+               </div>
+              <div class="card">
+                  <img src="./img/lejay-wine.jpg" alt=""> <br>
+                  Red Wine Special - $30
+              </div>
+              <div class="card">
+                  <img src="./img/coco-cake.jpg" alt=""><br>
+                  Gold Chocolate Dessert - $18
+              </div>
+          </div>
+      </section>
+    </section>
+
+    <section id="whatfood">
+        <div class="full">
+            <div class="egu">
+                <img src="./img/472a10bc8bba6458481f2956c0e830d0.jpg" alt="">
+                <div class="discra">
+                    <h3>Beans Cake</h3>
+                    <p class="fodo">Our Beans Cake is a mixture <br> of elequite and sweet taste <br> make you dinner and lunch <br> delicious with our Beans Cake </p>
+                </div>
+            </div>
+            <div class="menu-bid">
+                <div class="egu2">
+                    <div class="discra2">
+                        <h3>Clera Hill</h3>
+                        <p>Taste are one of a kind Muchmello <br>
+                        Cake made with biscuit, Chocolate,<br>
+                        Muchmello and other secret ingedent <br>
+                        come and enjoy the dissert of the season </p>
+                    </div>
+                    <img src="./img/choco-small-cake.jpg" alt="">
+                    <div class="discra2">
+                        <h3>Muchmello Cake</h3>
+                        <p>Taste are one of a kind Muchmello <br>
+                        Cake made with biscuit, Chocolate,<br>
+                        Muchmello and other secret ingedent <br>
+                        come and enjoy the dissert of the season </p>
+                    </div>
+                </div>
+                <div class="egu3">
+                    <img src="./img/clare-hills-wine.jpg" alt="">
+                    <div class="discra2">
+                        <h3>Muchmello Cake</h3>
+                        <p>Taste are one of a kind Muchmello <br>
+                        Cake made with biscuit, Chocolate,<br>
+                        Muchmello and other secret ingedent <br>
+                        come and enjoy the dissert of the season </p>
+                    </div>
+                    <img src="./img/amala.jfif" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reserve">
+        <h2>Book a Table</h2>
+        <form action="">
+            <input type="text" placeholder="Your Name" required>
+            <input type="date" name="" id="" required>
+            <input type="time" name="" id="" required>
+            <button id="submit">Reserve Now</button>
+        </form>
+        <script>
+            document.getElementById('reserve').addEventListener('submit',(e)=>{
+                e.preventDefault();
+                alert('Thank you! We received your request.');
+                e.target.reset();
+            })
+        </script>
+    </section>
+
+    <footer>
+        @2026 Crimson Crown Restaurant | Luxury Dining
+    </footer>
+</body>
+</html>
