@@ -1,2 +1,2 @@
 # Crimson-Crown-
-a restaurant website 
+a cool and simple restaurant website, to order and save revarvation
